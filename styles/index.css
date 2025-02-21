@@ -1,6 +1,14 @@
+.top {
+    background-color: rgba(245, 245, 245, 0.7); 
+    cursor: pointer;
+    width: 50px; height: 50px; border-radius: 50%;
+    position: fixed; z-index: 9999; right: 80px; bottom: 80px;
+}
+.top img {position: relative; left: 16px; top: 12px;}
+
 #main {width: 100%; height: 100vh;}
 /* ============================================= 공통 메인디자인 */
-#main .swiper-wrapper {}
+#main .swiper-wrapper {position: relative;}
 #main .swiper-wrapper .swiper-slide {position: relative;}
 #main .swiper-wrapper .swiper-slide video {}
 #main .swiper-wrapper .swiper-slide .contents {}
@@ -32,10 +40,10 @@
 }
 /* ============================================= 메인 */
 #main .swiper-wrapper {}
-
 /* ============================================= 1행 */
 #main .swiper-wrapper .makeai_01 {}
 #main .swiper-wrapper .makeai_01 video {}
+
 #main .swiper-wrapper .makeai_01 .contents {
     bottom: 70px; left: 80px;
     position: absolute;
@@ -99,11 +107,12 @@
     position: relative; top: 98px; right: 40px;
 }
 
-#main .swiper-wrapper .reason_03 .box .con_03 .high .contents > .sub_title,
-#main .swiper-wrapper .reason_03 .box .con_03 .trust .contents > .sub_title,
-#main .swiper-wrapper .reason_03 .box .con_03 .various .contents > .sub_title,
-#main .swiper-wrapper .reason_03 .box .con_03 .integrity .contents > .sub_title {
-    padding-bottom: 40px; margin-top: 58px;
+#main .swiper-wrapper .reason_03 .box .con_03 .high .contents > .con_title,
+#main .swiper-wrapper .reason_03 .box .con_03 .trust .contents > .con_title,
+#main .swiper-wrapper .reason_03 .box .con_03 .various .contents > .con_title,
+#main .swiper-wrapper .reason_03 .box .con_03 .integrity .contents > .con_title {
+    font-size: 2.50rem; font-weight: 700; letter-spacing: -0.02rem;
+    padding-bottom: 40px; margin-top: 58px; text-align: center;
 }
 
 #main .swiper-wrapper .reason_03 .box .con_03 .high .contents > .em_con,
@@ -114,6 +123,7 @@
     font-size: 0.88rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.02rem;
 }
 /* ============================================= 3행 개별선택자 */
+#main .swiper-wrapper .reason_03 .box .con_03 .list {}
 #main .swiper-wrapper .reason_03 .box .con_03 .high {}
 #main .swiper-wrapper .reason_03 .box .con_03 .high .contents {}
 #main .swiper-wrapper .reason_03 .box .con_03 .high .contents .sub_title {}
@@ -176,16 +186,16 @@
 }
 #main .swiper-wrapper .solution_07 .contents {
     position: absolute; right: 80px; top: 280px;
-    text-align: right; z-index: 500; 
+    text-align: right; z-index: 100; 
 }
 #main .swiper-wrapper .solution_07 .contents > * {
-    position: relative;     z-index: 900;
+    position: relative;     z-index: 300;
 }
 #main .swiper-wrapper .solution_07 .contents::after {
     content: ''; display: block;
     width: 500px; height: 200vh;
     background-color: #000;
-    position: absolute; top: -280px; right: -80px; z-index: 700;
+    position: absolute; top: -280px; right: -80px; z-index: 200;
 }
 #main .swiper-wrapper .solution_07 .contents .big_con {}
 #main .swiper-wrapper .solution_07 .contents .mid_title {}
@@ -261,8 +271,8 @@
 #main .swiper-wrapper .num_img .percent_bg .percent .reduction .mid_title em {}
 
 /* ============================================= 띠 배너 이미지 애니메이션*/
-#main .swiper-wrapper .num_img .logo_bg_ain {
-    background-image: url(../images/ani.jpg);
+#main .swiper-wrapper .num_img .logo_bg_ani {
+    background: url(../images/ani.jpg) repeat-x left top;
     width: 100%; height: 180px;
 }
 
