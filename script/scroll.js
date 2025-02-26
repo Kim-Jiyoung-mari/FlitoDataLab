@@ -7,7 +7,7 @@ gsap.to('.allinone_02 .contents',{
         trigger:'.allinone_02 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
@@ -22,7 +22,7 @@ gsap.to('.reason_03 .box',{
         trigger:'.reason_03 .box',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
@@ -36,7 +36,7 @@ gsap.to('.translate_04 .contents',{
         trigger:'.translate_04 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
@@ -50,7 +50,7 @@ gsap.to('.tts_05 .contents',{
         trigger:'.tts_05 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
@@ -64,7 +64,7 @@ gsap.to('.ocr_06 .contents',{
         trigger:'.ocr_06 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
@@ -78,7 +78,7 @@ gsap.to('.solution_07 .contents',{
         trigger:'.solution_07 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
@@ -91,7 +91,7 @@ gsap.to('.nlp_08 .contents',{
         trigger:'.nlp_08 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
